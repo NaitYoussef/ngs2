@@ -19,6 +19,14 @@ describe('index.html', () => {
         window.close();
       });
   })
-})
-
+  /*it('should contain users table', (done) =>{
+    const index = fs.readFileSync('./src/index.html', "utf-8");
+    jsdom.env(index, (err, window) => {
+      const users = window.document.getElementsByTagName('users')[0];
+      expect(users.innerHTML).to.equals('Users');
+      done();
+      window.close();
+    });
+  })*/
+});
 
